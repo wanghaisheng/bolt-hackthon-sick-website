@@ -243,14 +243,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Video Placeholder Click
+    // About Video Placeholder Click Handler
     const videoPlaceholder = document.querySelector('.video-placeholder');
-    if (videoPlaceholder) {
+    const aboutVideo = document.getElementById('aboutVideo');
+    
+    if (videoPlaceholder && aboutVideo) {
         videoPlaceholder.addEventListener('click', () => {
-            // In a real implementation, this would load a video player
-            alert('Video would play here. This is a placeholder for demonstration purposes.');
+            videoPlaceholder.style.display = 'none';
+            aboutVideo.style.display = 'block';
+            aboutVideo.play();
         });
     }
+    
+    // Workshop Tabs
+    const workshopTabs = document.querySelectorAll('.workshop-tab');
+    const workshopContents = document.querySelectorAll('.workshop-content');
+    
+    workshopTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            workshopTabs.forEach(t => t.classList.remove('active'));
+            // Add active class to clicked tab
+            tab.classList.add('active');
+            
+            // Show corresponding content
+            const target = tab.getAttribute('data-target');
+            workshopContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.id === target) {
+                    content.classList.add('active');
+                }
+            });
+        });
+    });
     
     // Animate elements on scroll
     const animateOnScroll = () => {
@@ -337,13 +362,61 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize challenge cards animation
     animateChallengeCards();
     
+    // Initialize animations for new sections
+    const animateNewSections = () => {
+        const elements = document.querySelectorAll('.mentor-card, .resource-card.tech, .workshop-item');
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+            
+            if (elementPosition < screenPosition) {
+                element.style.opacity = '1';
+                element.style.transform = element.classList.contains('mentor-card') 
+                    ? 'translateY(0)' 
+                    : element.classList.contains('resource-card') 
+                        ? 'translateY(0)' 
+                        : 'translateX(0)';
+            }
+        });
+    };
+    
+    // Set initial state for new section animations
+    const initNewSectionAnimations = () => {
+        const elements = document.querySelectorAll('.mentor-card, .resource-card.tech, .workshop-item');
+        
+        elements.forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = element.classList.contains('mentor-card') 
+                ? 'translateY(20px)' 
+                : element.classList.contains('resource-card') 
+                    ? 'translateY(20px)' 
+                    : 'translateX(-20px)';
+            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        // Trigger initial check
+        animateNewSections();
+    };
+    
+    // Initialize new section animations
+    initNewSectionAnimations();
+    
     // Add challenge cards to scroll animation elements
     const animateAllOnScroll = () => {
         animateOnScroll(); // Call the existing function
         animateChallengeCards(); // Call the new function
     };
     
+    // Add new sections to scroll animation
+    const animateAllSections = () => {
+        animateOnScroll(); // Call existing function for original sections
+        animateChallengeCards(); // Call existing function for challenge cards
+        animateNewSections(); // Call new function for new sections
+    };
+    
     // Update scroll event listener
     window.removeEventListener('scroll', animateOnScroll);
-    window.addEventListener('scroll', animateAllOnScroll);
+    window.removeEventListener('scroll', animateAllOnScroll);
+    window.addEventListener('scroll', animateAllSections);
 });

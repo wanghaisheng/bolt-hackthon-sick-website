@@ -138,11 +138,12 @@
                     </div>
                     <div class="about-video">
                         <div class="video-container">
-                            <div class="video-placeholder">
-                                <i class="far fa-play-circle"></i>
-                                <p>Watch: Why Join The World's Largest Hackathon</p>
-                            </div>
+                            <video id="aboutVideo" controls poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'><rect width='640' height='360' fill='%235C33F6' opacity='0.1'/><circle cx='320' cy='180' r='70' fill='%235C33F6' opacity='0.2'/><polygon points='290,140 370,180 290,220' fill='%235C33F6'/></svg>">
+                                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
+                        <p class="video-caption">Experience the excitement and innovation of the world's largest hackathon</p>
                     </div>
                 </div>
             </div>
@@ -776,6 +777,255 @@
                         <p>Use our team matching platform to connect with other participants based on skills, interests, and goals.</p>
                         <a href="#" class="cta-button secondary">Visit Team Building Platform</a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mentorship" class="mentorship">
+            <div class="container">
+                <h2>Mentorship Program</h2>
+                <p class="section-intro">Get guidance from industry experts throughout your hackathon journey. Our mentors are committed to helping participants of all experience levels succeed.</p>
+                
+                <div class="mentorship-content">
+                    <div class="mentorship-info">
+                        <h3>How Our Mentorship Works</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-user-friends"></i> 1-on-1 sessions with experienced mentors</li>
+                            <li><i class="fas fa-clock"></i> Scheduled office hours throughout the hackathon</li>
+                            <li><i class="fas fa-comments"></i> Dedicated Discord channels for quick questions</li>
+                            <li><i class="fas fa-laptop-code"></i> Code reviews and project guidance</li>
+                            <li><i class="fas fa-rocket"></i> Career advice and networking opportunities</li>
+                        </ul>
+                        
+                        <div class="mentor-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Mentors</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label">Industries</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5000+</span>
+                                <span class="stat-label">Mentoring Hours</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mentor-showcase">
+                        <h3>Featured Mentors</h3>
+                        <div class="mentor-grid">
+                            <div class="mentor-card">
+                                <div class="mentor-image">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="40" r="25" fill="#5C33F6" opacity="0.2"/>
+                                        <rect x="20" y="70" width="60" height="5" rx="2" fill="#5C33F6" opacity="0.3"/>
+                                        <rect x="30" y="80" width="40" height="5" rx="2" fill="#5C33F6" opacity="0.3"/>
+                                    </svg>
+                                </div>
+                                <h4>Alex Johnson</h4>
+                                <p class="mentor-title">ML Engineer, TechCorp</p>
+                                <p class="mentor-expertise">Machine Learning, Computer Vision</p>
+                            </div>
+                            <div class="mentor-card">
+                                <div class="mentor-image">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="40" r="25" fill="#FF304F" opacity="0.2"/>
+                                        <rect x="20" y="70" width="60" height="5" rx="2" fill="#FF304F" opacity="0.3"/>
+                                        <rect x="30" y="80" width="40" height="5" rx="2" fill="#FF304F" opacity="0.3"/>
+                                    </svg>
+                                </div>
+                                <h4>Priya Sharma</h4>
+                                <p class="mentor-title">AI Ethics Researcher</p>
+                                <p class="mentor-expertise">Responsible AI, Ethics, Policy</p>
+                            </div>
+                            <div class="mentor-card">
+                                <div class="mentor-image">
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="40" r="25" fill="#16DB93" opacity="0.2"/>
+                                        <rect x="20" y="70" width="60" height="5" rx="2" fill="#16DB93" opacity="0.3"/>
+                                        <rect x="30" y="80" width="40" height="5" rx="2" fill="#16DB93" opacity="0.3"/>
+                                    </svg>
+                                </div>
+                                <h4>Carlos Rodriguez</h4>
+                                <p class="mentor-title">No-Code AI Specialist</p>
+                                <p class="mentor-expertise">Low-Code Tools, Beginner Guidance</p>
+                            </div>
+                        </div>
+                        <div class="mentor-cta">
+                            <a href="#" class="text-link">View All Mentors <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-resources" class="tech-resources">
+            <div class="container">
+                <h2>Technology Resources</h2>
+                <p class="section-intro">Access cutting-edge tools, APIs, and computing resources to power your hackathon projects.</p>
+                
+                <div class="resources-cards">
+                    <div class="resource-card tech">
+                        <div class="resource-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Computing Credits</h3>
+                        <p>$5,000 in cloud credits for each team to build and deploy solutions at scale.</p>
+                        <div class="resource-partners">
+                            <span>Provided by:</span>
+                            <div class="partner-logos">
+                                <div class="partner-logo">AWS</div>
+                                <div class="partner-logo">GCP</div>
+                                <div class="partner-logo">Azure</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card tech">
+                        <div class="resource-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>AI Model Access</h3>
+                        <p>Free access to enterprise-grade AI models, including GPT-4, Claude, and specialized models.</p>
+                        <div class="resource-partners">
+                            <span>Provided by:</span>
+                            <div class="partner-logos">
+                                <div class="partner-logo">OpenAI</div>
+                                <div class="partner-logo">Anthropic</div>
+                                <div class="partner-logo">Stability</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card tech">
+                        <div class="resource-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Datasets & APIs</h3>
+                        <p>Premium access to curated datasets and commercial APIs for enhanced project capabilities.</p>
+                        <div class="resource-partners">
+                            <span>Provided by:</span>
+                            <div class="partner-logos">
+                                <div class="partner-logo">Kaggle</div>
+                                <div class="partner-logo">Hugging Face</div>
+                                <div class="partner-logo">RapidAPI</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card tech">
+                        <div class="resource-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Development Tools</h3>
+                        <p>Professional licenses for development environments, collaboration tools, and design software.</p>
+                        <div class="resource-partners">
+                            <span>Provided by:</span>
+                            <div class="partner-logos">
+                                <div class="partner-logo">JetBrains</div>
+                                <div class="partner-logo">GitHub</div>
+                                <div class="partner-logo">Figma</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-resources-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>All participants will receive access instructions and resource allocation details after registration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="workshops" class="workshops">
+            <div class="container">
+                <h2>Interactive Workshops</h2>
+                <p class="section-intro">Learn new skills, explore cutting-edge technologies, and get hands-on experience through our interactive workshop series.</p>
+                
+                <div class="workshop-tabs">
+                    <button class="workshop-tab active" data-target="pre-event">Pre-Event</button>
+                    <button class="workshop-tab" data-target="during-event">During Event</button>
+                    <button class="workshop-tab" data-target="advanced">Advanced Track</button>
+                    <button class="workshop-tab" data-target="beginners">Beginners Track</button>
+                </div>
+                
+                <div id="pre-event" class="workshop-content active">
+                    <div class="workshop-list">
+                        <div class="workshop-item">
+                            <div class="workshop-time">May 20 • 10:00 AM ET</div>
+                            <div class="workshop-details">
+                                <h3>Getting Started with AI Development</h3>
+                                <p>An introduction to AI concepts, tools, and development environments.</p>
+                                <div class="workshop-presenter">
+                                    <div class="presenter-avatar"></div>
+                                    <div class="presenter-info">
+                                        <span class="presenter-name">Dr. Emily Chen</span>
+                                        <span class="presenter-role">AI Education Director</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-link">Register <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="workshop-item">
+                            <div class="workshop-time">May 27 • 2:00 PM ET</div>
+                            <div class="workshop-details">
+                                <h3>Building with LLMs: Fundamentals and Best Practices</h3>
+                                <p>Learn how to effectively use, prompt, and integrate large language models in your projects.</p>
+                                <div class="workshop-presenter">
+                                    <div class="presenter-avatar"></div>
+                                    <div class="presenter-info">
+                                        <span class="presenter-name">Michael Rodriguez</span>
+                                        <span class="presenter-role">Senior ML Engineer</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-link">Register <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="workshop-item">
+                            <div class="workshop-time">June 3 • 11:00 AM ET</div>
+                            <div class="workshop-details">
+                                <h3>Team Formation & Project Planning</h3>
+                                <p>Strategies for forming effective teams and planning successful hackathon projects.</p>
+                                <div class="workshop-presenter">
+                                    <div class="presenter-avatar"></div>
+                                    <div class="presenter-info">
+                                        <span class="presenter-name">Sarah Johnson</span>
+                                        <span class="presenter-role">Hackathon Strategy Expert</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-link">Register <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="during-event" class="workshop-content">
+                    <div class="workshop-list">
+                        <!-- During event workshops would go here -->
+                        <p class="workshop-placeholder">Workshop schedule will be announced closer to the event.</p>
+                    </div>
+                </div>
+                
+                <div id="advanced" class="workshop-content">
+                    <div class="workshop-list">
+                        <!-- Advanced track workshops would go here -->
+                        <p class="workshop-placeholder">Advanced track workshop details coming soon.</p>
+                    </div>
+                </div>
+                
+                <div id="beginners" class="workshop-content">
+                    <div class="workshop-list">
+                        <!-- Beginners track workshops would go here -->
+                        <p class="workshop-placeholder">Beginners track workshop details coming soon.</p>
+                    </div>
+                </div>
+                
+                <div class="workshops-cta">
+                    <a href="#" class="cta-button secondary">Browse All Workshops</a>
                 </div>
             </div>
         </section>
