@@ -1,132 +1,1155 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="keywords" content="mobile, simulator, mobile design, mobile app">
-  <meta name="author" content="Your Name or Company">
-  <meta http-equiv="Content-Language" content="en">
-
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://www.yourwebsite.com/pc-simulator" />
-
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="PC Simulator">
-  <meta property="og:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta property="og:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta property="og:url" content="https://www.yourwebsite.com/pc-simulator">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PC Simulator">
-  <meta name="twitter:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="twitter:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta name="twitter:creator" content="@yourtwitterhandle">
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://www.yourwebsite.com/favicon.ico" type="image/x-icon">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXX-Y');
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y) {
-      window.clarity=window.clarity||function(){(clarity.q=clarity.q||[]).push(arguments)};
-      clarity('set', 'anonymizeIP', true);
-      i=l.createElement('script');i.async=1;i.src=r;i.type='text/javascript';
-      t=l.getElementsByTagName('script')[0];t.parentNode.insertBefore(i,t);
-    })(document,window,'script','https://www.clarity.ms/tag/XXXXXX');
-  </script>
-
-  <title>PC Simulator</title>
-
-  <style>
-    /* Global Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .mobile-container {
-      width: 360px;
-      height: 640px;
-      border: 16px solid black;
-      border-radius: 16px;
-      background-color: #fff;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .content {
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    /* Adjustments for PC */
-    @media (min-width: 768px) {
-      .mobile-container {
-        width: 600px;
-        height: 1000px;
-      }
-
-      .content {
-        font-size: 1.5rem;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .mobile-container {
-        width: 800px;
-        height: 1400px;
-      }
-
-      .content {
-        font-size: 1.8rem;
-      }
-    }
-
-    /* Additional responsiveness for larger screens */
-    @media (min-width: 1200px) {
-      body {
-        justify-content: flex-start;
-      }
-
-      .mobile-container {
-        margin-top: 50px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The World's Largest Hackathon - Build the future with AI. Code it. Learn it. Win it. Over $1M in prizes. Virtual event.">
+    <title>The World's Largest Hackathon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="config.js"></script>
+    <script type="module" src="app.js" defer></script>
 </head>
-
 <body>
-  <div class="mobile-container">
-    <div class="content">
-      <p>Mobile Simulator Screen</p>
-      <p>PC Version: Adjusted for larger screens.</p>
-    </div>
-  </div>
-</body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#hero">Hackathon.dev</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#prizes">Prizes</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#judges">Judges</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#rules">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>The World's Largest Hackathon</h1>
+                <h2>Build the future with AI. Code it. Learn it. Win it.</h2>
+                <h3>$1M+ in prizes. Virtual. Date TBD.</h3>
+                <div class="hero-cta">
+                    <a href="#register-pro" class="cta-button primary" id="register-pro-btn">Register Now (Experienced Coders)</a>
+                    <a href="#register-beginner" class="cta-button secondary" id="register-beginner-btn">Join the AI Revolution (Beginners Welcome!)</a>
+                </div>
+                <div class="countdown">
+                    <div class="countdown-timer">
+                        <div class="timer-block">
+                            <span id="days">00</span>
+                            <span>Days</span>
+                        </div>
+                        <div class="timer-block">
+                            <span id="hours">00</span>
+                            <span>Hours</span>
+                        </div>
+                        <div class="timer-block">
+                            <span id="minutes">00</span>
+                            <span>Minutes</span>
+                        </div>
+                        <div class="timer-block">
+                            <span id="seconds">00</span>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+                    <p>Until Registration Closes</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#5C33F6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FF304F;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="200" cy="150" r="120" fill="url(#grad1)" opacity="0.8">
+                        <animate attributeName="r" values="120;125;120" dur="4s" repeatCount="indefinite" />
+                    </circle>
+                    <g class="code-elements" fill="white">
+                        <text x="145" y="130" font-family="monospace" font-size="14">&lt;AI&gt;</text>
+                        <text x="145" y="150" font-family="monospace" font-size="14">  Build()</text>
+                        <text x="145" y="170" font-family="monospace" font-size="14">&lt;/AI&gt;</text>
+                    </g>
+                    <g class="binary" fill="rgba(255,255,255,0.7)" font-family="monospace" font-size="8">
+                        <text x="100" y="100">10101</text>
+                        <text x="250" y="100">01010</text>
+                        <text x="100" y="200">01010</text>
+                        <text x="250" y="200">10101</text>
+                    </g>
+                    <g class="connection-lines" stroke="white" stroke-width="1" opacity="0.5">
+                        <line x1="145" y1="140" x2="100" y2="100">
+                            <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" />
+                        </line>
+                        <line x1="195" y1="140" x2="250" y2="100">
+                            <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" />
+                        </line>
+                        <line x1="145" y1="160" x2="100" y2="200">
+                            <animate attributeName="opacity" values="0.5;1;0.5" dur="3.2s" repeatCount="indefinite" />
+                        </line>
+                        <line x1="195" y1="160" x2="250" y2="200">
+                            <animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" repeatCount="indefinite" />
+                        </line>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About The Hackathon</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="highlight">Join a global community of builders, from seasoned developers to AI enthusiasts, to create innovative solutions using artificial intelligence. Whether you're a coding pro or just starting your AI journey, this hackathon is for you.</p>
+                        
+                        <div class="audience-toggle">
+                            <button class="toggle-btn active" data-target="experienced">For Experienced Coders</button>
+                            <button class="toggle-btn" data-target="beginners">For AI Enthusiasts</button>
+                        </div>
+                        
+                        <div id="experienced-content" class="audience-content active">
+                            <h3>Why Participate as an Experienced Developer</h3>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-code"></i> Work with cutting-edge AI technologies</li>
+                                <li><i class="fas fa-trophy"></i> Compete for substantial prizes worth over $1M</li>
+                                <li><i class="fas fa-briefcase"></i> Showcase your skills to potential employers</li>
+                                <li><i class="fas fa-network-wired"></i> Network with industry leaders and tech innovators</li>
+                                <li><i class="fas fa-lightbulb"></i> Push the boundaries of what's possible with AI</li>
+                            </ul>
+                        </div>
+                        
+                        <div id="beginners-content" class="audience-content">
+                            <h3>Why Join as an AI Enthusiast</h3>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-hands-helping"></i> Learn in a supportive environment with dedicated mentors</li>
+                                <li><i class="fas fa-laptop-code"></i> Build your first AI project with guided assistance</li>
+                                <li><i class="fas fa-book"></i> Access beginner-friendly resources and workshops</li>
+                                <li><i class="fas fa-users"></i> Connect with like-minded learners and experienced developers</li>
+                                <li><i class="fas fa-rocket"></i> Discover your passion for AI development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-video">
+                        <div class="video-container">
+                            <div class="video-placeholder">
+                                <i class="far fa-play-circle"></i>
+                                <p>Watch: Why Join The World's Largest Hackathon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prizes" class="prizes">
+            <div class="container">
+                <h2>Over $1,000,000 in Prizes</h2>
+                <p class="section-intro">Compete for life-changing prizes across multiple categories designed for both experienced developers and AI enthusiasts.</p>
+                
+                <div class="prize-cards">
+                    <div class="prize-card grand">
+                        <div class="prize-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Grand Prize</h3>
+                        <div class="prize-amount">$500,000</div>
+                        <p>For the overall best AI solution, judged on innovation, technical execution, and real-world impact.</p>
+                    </div>
+                    
+                    <div class="prize-card">
+                        <div class="prize-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Best AI Application (Experienced)</h3>
+                        <div class="prize-amount">$100,000</div>
+                        <p>For the most technically impressive and advanced implementation of AI technology.</p>
+                    </div>
+                    
+                    <div class="prize-card">
+                        <div class="prize-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Most Innovative Beginner Project</h3>
+                        <div class="prize-amount">$75,000</div>
+                        <p>For the most creative and promising project by participants new to AI development.</p>
+                    </div>
+                    
+                    <div class="prize-card">
+                        <div class="prize-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>Best Use of API</h3>
+                        <div class="prize-amount">$50,000</div>
+                        <p>For the most effective integration and utilization of third-party APIs in an AI solution.</p>
+                    </div>
+                    
+                    <div class="prize-card">
+                        <div class="prize-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Best Educational AI Project</h3>
+                        <div class="prize-amount">$50,000</div>
+                        <p>For the AI solution with the greatest potential to transform learning and education.</p>
+                    </div>
+                </div>
+                
+                <div class="prize-note">
+                    <p><strong>Note:</strong> Additional sponsor-specific prizes will be announced closer to the event. Prize distribution subject to verification of eligibility and compliance with hackathon rules.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="register">
+            <div class="container">
+                <h2>Register Now</h2>
+                <p class="section-intro">Join thousands of innovators from around the world in this groundbreaking event</p>
+                <div class="register-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Select Experience Level</option>
+                                <option value="experienced">Experienced Programmer</option>
+                                <option value="beginner">AI Enthusiast (Beginner)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="cta-button primary">Secure Your Spot</button>
+                    </form>
+                    <div class="form-note">
+                        <p><i class="fas fa-lock"></i> Your information is secure and will never be shared.</p>
+                        <p><i class="fas fa-check-circle"></i> 100% Satisfaction Guarantee: Full refund available up to 14 days before the event.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsors" class="sponsors">
+            <div class="container">
+                <h2>Our Incredible Sponsors</h2>
+                <p class="section-intro">Backed by the world's leading technology companies that are committed to fostering both experienced talent and nurturing the next generation of AI developers.</p>
+                
+                <div class="sponsor-tiers">
+                    <div class="sponsor-tier platinum">
+                        <h3>Platinum Sponsors</h3>
+                        <div class="sponsor-logos">
+                            <div class="sponsor-logo">
+                                <svg width="160" height="80" viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="30" y="25" width="100" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="80" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">PLATINUM SPONSOR</text>
+                                </svg>
+                            </div>
+                            <div class="sponsor-logo">
+                                <svg width="160" height="80" viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="30" y="25" width="100" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="80" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#333">PLATINUM SPONSOR</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sponsor-tier gold">
+                        <h3>Gold Sponsors</h3>
+                        <div class="sponsor-logos">
+                            <div class="sponsor-logo">
+                                <svg width="140" height="70" viewBox="0 0 140 70" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="25" y="20" width="90" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="70" y="40" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">GOLD SPONSOR</text>
+                                </svg>
+                            </div>
+                            <div class="sponsor-logo">
+                                <svg width="140" height="70" viewBox="0 0 140 70" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="25" y="20" width="90" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="70" y="40" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">GOLD SPONSOR</text>
+                                </svg>
+                            </div>
+                            <div class="sponsor-logo">
+                                <svg width="140" height="70" viewBox="0 0 140 70" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="25" y="20" width="90" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="70" y="40" font-family="Arial" font-size="10" text-anchor="middle" fill="#333">GOLD SPONSOR</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sponsor-tier silver">
+                        <h3>Silver Sponsors</h3>
+                        <div class="sponsor-logos">
+                            <div class="sponsor-logo">
+                                <svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="20" y="15" width="80" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="60" y="35" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">SILVER SPONSOR</text>
+                                </svg>
+                            </div>
+                            <div class="sponsor-logo">
+                                <svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="20" y="15" width="80" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="60" y="35" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">SILVER SPONSOR</text>
+                                </svg>
+                            </div>
+                            <div class="sponsor-logo">
+                                <svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="20" y="15" width="80" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="60" y="35" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">SILVER SPONSOR</text>
+                                </svg>
+                            </div>
+                            <div class="sponsor-logo">
+                                <svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="20" y="15" width="80" height="30" rx="5" fill="#e0e0e0"/>
+                                    <text x="60" y="35" font-family="Arial" font-size="8" text-anchor="middle" fill="#333">SILVER SPONSOR</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sponsor-cta">
+                    <h3>Become a Sponsor</h3>
+                    <p>Connect with both experienced developers and AI enthusiasts. Showcase your brand and technologies to a diverse global audience.</p>
+                    <a href="#" class="cta-button secondary">Sponsorship Opportunities</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="judges" class="judges">
+            <div class="container">
+                <h2>Meet Our Esteemed Judges</h2>
+                <p class="section-intro">Our diverse panel of industry leaders will evaluate projects based on innovation, technical execution, and real-world impact.</p>
+                
+                <div class="judges-grid">
+                    <div class="judge-card">
+                        <div class="judge-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="40" r="25" fill="#e0e0e0"/>
+                                <rect x="20" y="70" width="60" height="5" rx="2" fill="#e0e0e0"/>
+                                <rect x="30" y="80" width="40" height="5" rx="2" fill="#e0e0e0"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Sarah Chen</h3>
+                        <p class="judge-title">AI Research Director, Tech Giant Inc.</p>
+                        <p class="judge-bio">Leading AI researcher with 15+ years of experience in machine learning and neural networks. Passionate about mentoring the next generation of AI developers.</p>
+                    </div>
+                    
+                    <div class="judge-card">
+                        <div class="judge-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="40" r="25" fill="#e0e0e0"/>
+                                <rect x="20" y="70" width="60" height="5" rx="2" fill="#e0e0e0"/>
+                                <rect x="30" y="80" width="40" height="5" rx="2" fill="#e0e0e0"/>
+                            </svg>
+                        </div>
+                        <h3>Mark Reynolds</h3>
+                        <p class="judge-title">Founder & CEO, AI Startup Accelerator</p>
+                        <p class="judge-bio">Serial entrepreneur who has founded three successful AI startups. Specializes in identifying promising AI technologies and helping developers scale their innovations.</p>
+                    </div>
+                    
+                    <div class="judge-card">
+                        <div class="judge-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="40" r="25" fill="#e0e0e0"/>
+                                <rect x="20" y="70" width="60" height="5" rx="2" fill="#e0e0e0"/>
+                                <rect x="30" y="80" width="40" height="5" rx="2" fill="#e0e0e0"/>
+                            </svg>
+                        </div>
+                        <h3>Prof. James Wilson</h3>
+                        <p class="judge-title">Director, AI Education Institute</p>
+                        <p class="judge-bio">Pioneer in AI education with a focus on making machine learning accessible to beginners. Has developed curriculum used by over 50 universities worldwide.</p>
+                    </div>
+                    
+                    <div class="judge-card">
+                        <div class="judge-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="40" r="25" fill="#e0e0e0"/>
+                                <rect x="20" y="70" width="60" height="5" rx="2" fill="#e0e0e0"/>
+                                <rect x="30" y="80" width="40" height="5" rx="2" fill="#e0e0e0"/>
+                            </svg>
+                        </div>
+                        <h3>Aisha Patel</h3>
+                        <p class="judge-title">CTO, Innovation Labs</p>
+                        <p class="judge-bio">Technical leader with expertise in AI implementation across industries. Advocates for practical AI applications that solve real-world problems.</p>
+                    </div>
+                </div>
+                
+                <div class="judge-cta">
+                    <h3>Interested in Being a Judge?</h3>
+                    <p>We're looking for experienced professionals with backgrounds in AI, software development, product design, and entrepreneurship.</p>
+                    <a href="#" class="cta-button secondary">Apply to be a Judge</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="audience-toggle">
+                    <button class="toggle-btn active" data-target="exp-faq">For Experienced Coders</button>
+                    <button class="toggle-btn" data-target="beg-faq">For AI Enthusiasts</button>
+                </div>
+                
+                <div id="exp-faq" class="audience-content active">
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What technologies and frameworks are allowed?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can use any programming language, framework, or AI model for your project. This includes TensorFlow, PyTorch, Hugging Face transformers, custom models, and any other AI tools. We encourage creative and innovative implementations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What are the judging criteria for experienced participants?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Projects from experienced developers will be judged on: technical complexity and innovation (40%), real-world applicability (25%), code quality and architecture (20%), and presentation quality (15%). The judges will be looking for sophisticated implementations that push the boundaries of AI.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I use pre-existing code or models?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You may use open-source libraries, models, and frameworks. However, the core innovation and implementation must be developed during the hackathon. All pre-existing code must be clearly documented and credited in your submission.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What compute resources will be available?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Through our sponsors, we'll provide cloud computing credits for participants to access GPU and TPU resources. Details on the exact allocations and how to access these resources will be provided closer to the event date.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="beg-faq" class="audience-content">
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What is AI and how does it work?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Artificial Intelligence (AI) refers to computer systems designed to perform tasks that normally require human intelligence. For beginners, you don't need to understand all the complex math—you'll learn to use AI tools and platforms that make implementation accessible. We'll provide resources to help you understand the fundamentals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Do I need programming experience to participate?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>No prior programming experience is required! We'll provide beginner-friendly workshops and resources. You'll be able to use no-code or low-code platforms to build your AI project. Each beginner team will also be assigned a mentor to provide guidance throughout the hackathon.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What kind of projects can beginners create?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Beginners can create a wide range of projects such as: a simple chatbot using existing AI platforms, an image recognition app that identifies objects, a text analysis tool that summarizes content, or a recommendation system. We'll provide templates and examples to help you get started.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How will I get help if I'm stuck?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We've designed a comprehensive support system for beginners! This includes dedicated mentors, beginner-specific workshops throughout the event, a help desk with experienced volunteers, and active community forums where you can ask questions. No one gets left behind in this hackathon.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline">
+            <div class="container">
+                <h2>Hackathon Timeline</h2>
+                <p class="section-intro">Mark your calendars for these key dates to ensure you don't miss any important deadlines.</p>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 15</div>
+                        <div class="timeline-content">
+                            <h3>Registration Opens</h3>
+                            <p>Early bird registration begins with special pricing and benefits.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 30</div>
+                        <div class="timeline-content">
+                            <h3>Pre-Hackathon Workshops Begin</h3>
+                            <p>Weekly workshops for beginners and advanced participants to prepare for the hackathon.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun 30</div>
+                        <div class="timeline-content">
+                            <h3>Team Formation Deadline</h3>
+                            <p>Last day to form or join teams on our official team-building platform.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 7</div>
+                        <div class="timeline-content">
+                            <h3>Hackathon Kickoff</h3>
+                            <p>Opening ceremony, announcement of final challenge details, and hacking begins!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 14</div>
+                        <div class="timeline-content">
+                            <h3>Submission Deadline</h3>
+                            <p>All projects must be submitted by this time for judging consideration.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 15</div>
+                        <div class="timeline-content">
+                            <h3>Judging Period</h3>
+                            <p>Judges review submissions and select finalists.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 18</div>
+                        <div class="timeline-content">
+                            <h3>Finalists Presentations</h3>
+                            <p>Top teams present their projects to judges and the community.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul 20</div>
+                        <div class="timeline-content">
+                            <h3>Awards Ceremony</h3>
+                            <p>Winners announced and prizes awarded during our virtual celebration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rules" class="rules">
+            <div class="container">
+                <h2>Rules & Guidelines</h2>
+                <p class="section-intro">To ensure a fair and enjoyable experience for all participants, please familiarize yourself with the following rules.</p>
+                
+                <div class="rules-container">
+                    <div class="rules-card">
+                        <h3><i class="fas fa-user-check"></i> Eligibility</h3>
+                        <ul>
+                            <li>Open to participants of all skill levels, from beginners to experts</li>
+                            <li>Participants must be at least 18 years old</li>
+                            <li>Teams can have 1-5 members</li>
+                            <li>Participants may only be part of one team</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rules-card">
+                        <h3><i class="fas fa-code"></i> Project Requirements</h3>
+                        <ul>
+                            <li>All code must be created during the hackathon period</li>
+                            <li>Use of open source libraries and APIs is permitted</li>
+                            <li>Projects must incorporate AI in a meaningful way</li>
+                            <li>All submissions must include source code and documentation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rules-card">
+                        <h3><i class="fas fa-balance-scale"></i> Intellectual Property</h3>
+                        <ul>
+                            <li>Participants retain ownership of their intellectual property</li>
+                            <li>By submitting, you grant us rights to showcase your project</li>
+                            <li>Do not use copyrighted material without permission</li>
+                            <li>Proper attribution must be given for all resources used</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rules-card">
+                        <h3><i class="fas fa-handshake"></i> Code of Conduct</h3>
+                        <ul>
+                            <li>Treat all participants with respect and courtesy</li>
+                            <li>Harassment or discrimination will not be tolerated</li>
+                            <li>Collaboration is encouraged, but maintain team integrity</li>
+                            <li>Judges' decisions are final</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="rules-more">
+                    <p>For a complete list of rules and guidelines, please review our comprehensive <a href="#" class="text-link">Rules Document</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources">
+            <div class="container">
+                <h2>Preparation Resources</h2>
+                <p class="section-intro">Get ready for the hackathon with these helpful resources tailored to your experience level.</p>
+                
+                <div class="audience-toggle">
+                    <button class="toggle-btn active" data-target="exp-resources">For Experienced Coders</button>
+                    <button class="toggle-btn" data-target="beg-resources">For AI Enthusiasts</button>
+                </div>
+                
+                <div id="exp-resources" class="audience-content active">
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>Advanced AI Techniques</h3>
+                            <p>Explore cutting-edge AI algorithms and techniques to give your project a competitive edge.</p>
+                            <a href="#" class="text-link">Access Resource <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>API Documentation</h3>
+                            <p>Comprehensive documentation for all APIs and services available during the hackathon.</p>
+                            <a href="#" class="text-link">Access Resource <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3>Advanced Workshops</h3>
+                            <p>Pre-recorded workshops on specialized topics from industry experts.</p>
+                            <a href="#" class="text-link">Access Resource <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="beg-resources" class="audience-content">
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>AI Fundamentals</h3>
+                            <p>Learn the basics of AI and machine learning with our beginner-friendly guide.</p>
+                            <a href="#" class="text-link">Access Resource <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>No-Code AI Tools</h3>
+                            <p>Discover powerful no-code and low-code tools that make AI accessible to everyone.</p>
+                            <a href="#" class="text-link">Access Resource <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Beginner Tutorials</h3>
+                            <p>Step-by-step tutorials designed specifically for those new to AI development.</p>
+                            <a href="#" class="text-link">Access Resource <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges" class="challenges">
+            <div class="container">
+                <h2>Hackathon Challenges</h2>
+                <p class="section-intro">Explore the exciting challenge categories for this year's hackathon.</p>
+                
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <div class="challenge-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI for Good</h3>
+                        <p>Create solutions that address social, environmental, or humanitarian challenges using AI.</p>
+                        <div class="challenge-detail">
+                            <span><i class="fas fa-trophy"></i> Prize: $100,000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <div class="challenge-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Healthcare Innovation</h3>
+                        <p>Develop AI applications that improve healthcare delivery, patient outcomes, or medical research.</p>
+                        <div class="challenge-detail">
+                            <span><i class="fas fa-trophy"></i> Prize: $75,000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <div class="challenge-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Generative AI</h3>
+                        <p>Push the boundaries of what's possible with generative AI models in creative and practical applications.</p>
+                        <div class="challenge-detail">
+                            <span><i class="fas fa-trophy"></i> Prize: $80,000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-card">
+                        <div class="challenge-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3>Climate Tech</h3>
+                        <p>Build AI-powered solutions to address climate change, sustainability, and environmental challenges.</p>
+                        <div class="challenge-detail">
+                            <span><i class="fas fa-trophy"></i> Prize: $90,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team-building" class="team-building">
+            <div class="container">
+                <h2>Team Building</h2>
+                <p class="section-intro">Looking for teammates? Connect with other participants to form the perfect team.</p>
+                
+                <div class="team-content">
+                    <div class="team-info">
+                        <h3>Why Join a Team?</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-users"></i> Combine diverse skills and perspectives</li>
+                            <li><i class="fas fa-lightbulb"></i> Generate better ideas through collaboration</li>
+                            <li><i class="fas fa-tasks"></i> Distribute workload and increase productivity</li>
+                            <li><i class="fas fa-network-wired"></i> Build your professional network</li>
+                        </ul>
+                        
+                        <div class="team-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1-5</span>
+                                <span class="stat-label">Team Size</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Teams Formed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10k+</span>
+                                <span class="stat-label">Participants</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-cta">
+                        <h3>Find Your Perfect Team</h3>
+                        <p>Use our team matching platform to connect with other participants based on skills, interests, and goals.</p>
+                        <a href="#" class="cta-button secondary">Visit Team Building Platform</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="cta-section">
+            <div class="container">
+                <div class="final-cta">
+                    <h2>Ready to Build the Future with AI?</h2>
+                    <p>Join thousands of innovators from around the world in the largest AI hackathon ever. Whether you're an experienced developer or just starting your AI journey, there's a place for you.</p>
+                    <div class="countdown">
+                        <div class="countdown-timer">
+                            <div class="timer-block">
+                                <span id="cta-days">00</span>
+                                <span>Days</span>
+                            </div>
+                            <div class="timer-block">
+                                <span id="cta-hours">00</span>
+                                <span>Hours</span>
+                            </div>
+                            <div class="timer-block">
+                                <span id="cta-minutes">00</span>
+                                <span>Minutes</span>
+                            </div>
+                            <div class="timer-block">
+                                <span id="cta-seconds">00</span>
+                                <span>Seconds</span>
+                            </div>
+                        </div>
+                        <p>Until Registration Closes</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#register-pro" class="cta-button primary large">Register Now (Experienced Coders)</a>
+                        <a href="#register-beginner" class="cta-button secondary large">Join the AI Revolution (Beginners Welcome!)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>Success Stories</h2>
+                <p class="section-intro">Hear from past participants about their hackathon experience.</p>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="40" r="25" fill="#e0e0e0"/>
+                                    <rect x="20" y="70" width="60" height="5" rx="2" fill="#e0e0e0"/>
+                                    <rect x="30" y="80" width="40" height="5" rx="2" fill="#e0e0e0"/>
+                                </svg>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"As an experienced developer, I was amazed by the level of innovation and support at this hackathon. Our team built an AI model that's now the foundation of our startup!"</p>
+                                <div class="testimonial-author">
+                                    <p class="author-name">Jennifer Wu</p>
+                                    <p class="author-company">CTO, AI Health Solutions</p>
+                                    <p class="verification"><i class="fas fa-check-circle"></i> Verified Participant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="40" r="25" fill="#e0e0e0"/>
+                                    <rect x="20" y="70" width="60" height="5" rx="2" fill="#e0e0e0"/>
+                                    <rect x="30" y="80" width="40" height="5" rx="2" fill="#e0e0e0"/>
+                                </svg>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"I joined with zero coding experience, just curiosity about AI. The mentors were incredibly supportive, and I created my first working AI project! Now I'm enrolled in a computer science degree program."</p>
+                                <div class="testimonial-author">
+                                    <p class="author-name">Michael Torres</p>
+                                    <p class="author-company">Former Marketing Manager, Now CS Student</p>
+                                    <p class="verification"><i class="fas fa-check-circle"></i> Verified Participant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="40" r="25" fill="#e0e0e0"/>
+                                    <rect x="20" y="70" width="60" height="5" rx="2" fill="#e0e0e0"/>
+                                    <rect x="30" y="80" width="40" height="5" rx="2" fill="#e0e0e0"/>
+                                </svg>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>"Our team of experienced developers won the Best AI Application category. The prize money and connections we made at the hackathon helped us secure seed funding for our company."</p>
+                                <div class="testimonial-author">
+                                    <p class="author-name">David Park</p>
+                                    <p class="author-company">Founder, NLP Innovations</p>
+                                    <p class="verification"><i class="fas fa-check-circle"></i> Verified Participant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-controls">
+                        <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="testimonial-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                        </div>
+                        <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase" class="showcase">
+            <div class="container">
+                <h2>Past Winning Projects</h2>
+                <p class="section-intro">Explore amazing projects from previous hackathons that pushed the boundaries of what's possible with AI.</p>
+                
+                <div class="showcase-filter-container">
+                    <button class="showcase-filter active" data-category="all">All Projects</button>
+                    <button class="showcase-filter" data-category="ai-for-good">AI for Good</button>
+                    <button class="showcase-filter" data-category="healthcare">Healthcare</button>
+                    <button class="showcase-filter" data-category="generative-ai">Generative AI</button>
+                    <button class="showcase-filter" data-category="climate">Climate Tech</button>
+                </div>
+                
+                <div class="showcase-grid">
+                    <div class="showcase-item ai-for-good show">
+                        <div class="showcase-image">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#f4f4f7"/>
+                                <circle cx="150" cy="100" r="50" fill="#5C33F6" opacity="0.2"/>
+                                <path d="M130,80 L170,80 L170,120 L130,120 Z" fill="#5C33F6" opacity="0.3"/>
+                                <text x="150" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#5C33F6">AI for Good Project</text>
+                            </svg>
+                            <div class="showcase-badge">Grand Prize</div>
+                        </div>
+                        <div class="showcase-content">
+                            <h3 class="showcase-title">AquaGuard AI</h3>
+                            <div class="showcase-meta">
+                                <div class="showcase-team">
+                                    <i class="fas fa-users"></i> Team EcoTech
+                                </div>
+                                <div class="showcase-category">
+                                    <i class="fas fa-tag"></i> AI for Good
+                                </div>
+                            </div>
+                            <p class="showcase-desc">An AI-powered system that monitors water quality in real-time and predicts contamination events before they affect communities.</p>
+                            <div class="showcase-footer">
+                                <div class="showcase-prize">
+                                    <i class="fas fa-trophy"></i> $500,000
+                                </div>
+                                <a href="#" class="text-link">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="showcase-item healthcare show">
+                        <div class="showcase-image">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#f4f4f7"/>
+                                <path d="M100,100 L150,70 L200,100 L150,130 Z" fill="#FF304F" opacity="0.2"/>
+                                <circle cx="150" cy="100" r="20" fill="#FF304F" opacity="0.3"/>
+                                <text x="150" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#FF304F">Healthcare Project</text>
+                            </svg>
+                            <div class="showcase-badge">Best AI Application</div>
+                        </div>
+                        <div class="showcase-content">
+                            <h3 class="showcase-title">NeuroDiagnose</h3>
+                            <div class="showcase-meta">
+                                <div class="showcase-team">
+                                    <i class="fas fa-users"></i> Team MedInnovate
+                                </div>
+                                <div class="showcase-category">
+                                    <i class="fas fa-tag"></i> Healthcare
+                                </div>
+                            </div>
+                            <p class="showcase-desc">An advanced neural network that analyzes medical images to detect early signs of neurological disorders with 97% accuracy.</p>
+                            <div class="showcase-footer">
+                                <div class="showcase-prize">
+                                    <i class="fas fa-trophy"></i> $100,000
+                                </div>
+                                <a href="#" class="text-link">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="showcase-item generative-ai show">
+                        <div class="showcase-image">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#f4f4f7"/>
+                                <rect x="100" y="70" width="100" height="60" rx="10" fill="#16DB93" opacity="0.2"/>
+                                <polyline points="120,100 140,120 180,80" stroke="#16DB93" stroke-width="5" fill="none" opacity="0.3"/>
+                                <text x="150" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#16DB93">Generative AI Project</text>
+                            </svg>
+                            <div class="showcase-badge">Most Innovative</div>
+                        </div>
+                        <div class="showcase-content">
+                            <h3 class="showcase-title">SymphonyAI</h3>
+                            <div class="showcase-meta">
+                                <div class="showcase-team">
+                                    <i class="fas fa-users"></i> Team CreativeFusion
+                                </div>
+                                <div class="showcase-category">
+                                    <i class="fas fa-tag"></i> Generative AI
+                                </div>
+                            </div>
+                            <p class="showcase-desc">A groundbreaking generative AI that composes original music by learning from thousands of classical compositions across different eras.</p>
+                            <div class="showcase-footer">
+                                <div class="showcase-prize">
+                                    <i class="fas fa-trophy"></i> $80,000
+                                </div>
+                                <a href="#" class="text-link">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="showcase-item climate show">
+                        <div class="showcase-image">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#f4f4f7"/>
+                                <circle cx="150" cy="100" r="40" fill="#5C33F6" opacity="0.1"/>
+                                <circle cx="150" cy="100" r="30" fill="#16DB93" opacity="0.2"/>
+                                <circle cx="150" cy="100" r="20" fill="#5C33F6" opacity="0.1"/>
+                                <text x="150" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#16DB93">Climate Tech Project</text>
+                            </svg>
+                            <div class="showcase-badge">Best Educational</div>
+                        </div>
+                        <div class="showcase-content">
+                            <h3 class="showcase-title">ClimatePredict</h3>
+                            <div class="showcase-meta">
+                                <div class="showcase-team">
+                                    <i class="fas fa-users"></i> Team GreenFuture
+                                </div>
+                                <div class="showcase-category">
+                                    <i class="fas fa-tag"></i> Climate Tech
+                                </div>
+                            </div>
+                            <p class="showcase-desc">An interactive educational platform that uses AI to create personalized climate change simulations based on user location and lifestyle choices.</p>
+                            <div class="showcase-footer">
+                                <div class="showcase-prize">
+                                    <i class="fas fa-trophy"></i> $50,000
+                                </div>
+                                <a href="#" class="text-link">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="showcase-item ai-for-good beginner show">
+                        <div class="showcase-image">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#f4f4f7"/>
+                                <polygon points="150,60 180,120 120,120" fill="#FF304F" opacity="0.2"/>
+                                <rect x="120" y="120" width="60" height="30" fill="#FF304F" opacity="0.1"/>
+                                <text x="150" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#FF304F">Beginner Project</text>
+                            </svg>
+                            <div class="showcase-badge">Best Beginner</div>
+                        </div>
+                        <div class="showcase-content">
+                            <h3 class="showcase-title">SignalTranslate</h3>
+                            <div class="showcase-meta">
+                                <div class="showcase-team">
+                                    <i class="fas fa-users"></i> Team NewCoders
+                                </div>
+                                <div class="showcase-category">
+                                    <i class="fas fa-tag"></i> AI for Good
+                                </div>
+                            </div>
+                            <p class="showcase-desc">A mobile app that uses computer vision to translate sign language into text and speech in real-time, created by a team with no prior coding experience.</p>
+                            <div class="showcase-footer">
+                                <div class="showcase-prize">
+                                    <i class="fas fa-trophy"></i> $75,000
+                                </div>
+                                <a href="#" class="text-link">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="showcase-item healthcare generative-ai show">
+                        <div class="showcase-image">
+                            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#f4f4f7"/>
+                                <rect x="90" y="70" width="120" height="60" rx="30" fill="#5C33F6" opacity="0.2"/>
+                                <circle cx="150" cy="100" r="25" fill="#5C33F6" opacity="0.1"/>
+                                <text x="150" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#5C33F6">Healthcare + GenAI Project</text>
+                            </svg>
+                            <div class="showcase-badge">Best Use of API</div>
+                        </div>
+                        <div class="showcase-content">
+                            <h3 class="showcase-title">MediGenomics</h3>
+                            <div class="showcase-meta">
+                                <div class="showcase-team">
+                                    <i class="fas fa-users"></i> Team BioTech
+                                </div>
+                                <div class="showcase-category">
+                                    <i class="fas fa-tag"></i> Healthcare + GenAI
+                                </div>
+                            </div>
+                            <p class="showcase-desc">An AI system that generates personalized treatment plans by analyzing patient genomic data and medical history using advanced LLMs.</p>
+                            <div class="showcase-footer">
+                                <div class="showcase-prize">
+                                    <i class="fas fa-trophy"></i> $50,000
+                                </div>
+                                <a href="#" class="text-link">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="showcase-more">
+                    <a href="#" class="cta-button secondary">Explore All Projects</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">Hackathon.dev</div>
+                    <p>The World's Largest Hackathon</p>
+                    <p>Building the future with AI together.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Hackathon</h3>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#prizes">Prizes</a></li>
+                            <li><a href="#sponsors">Sponsors</a></li>
+                            <li><a href="#judges">Judges</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                            <li><a href="#rules">Rules</a></li>
+                            <li><a href="#">Getting Started</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Connect</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Discord Community</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 The World's Largest Hackathon. All rights reserved.</p>
+                </div>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Code of Conduct</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
