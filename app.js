@@ -419,4 +419,62 @@ document.addEventListener('DOMContentLoaded', () => {
     window.removeEventListener('scroll', animateOnScroll);
     window.removeEventListener('scroll', animateAllOnScroll);
     window.addEventListener('scroll', animateAllSections);
+    
+    // World Record Participant Counter Animation
+    const animateParticipantCounter = () => {
+        const counter = document.getElementById('current-participants');
+        if (counter) {
+            const target = 12547; // Current registration number
+            let count = 10000;
+            const interval = setInterval(() => {
+                count += Math.ceil((target - count) / 20);
+                counter.innerText = count.toLocaleString();
+                if (count >= target) {
+                    clearInterval(interval);
+                }
+            }, 50);
+        }
+    };
+
+    // Initialize participant counter animation
+    animateParticipantCounter();
+
+    // Add copy functionality for share buttons
+    const copyButtons = document.querySelectorAll('.copy-btn');
+    
+    copyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            let textToCopy;
+            if (button.previousElementSibling && button.previousElementSibling.tagName === 'INPUT') {
+                textToCopy = button.previousElementSibling.value;
+            } else if (button.parentElement.classList.contains('share-card')) {
+                textToCopy = button.parentElement.querySelector('.share-message').textContent;
+            }
+            
+            if (textToCopy) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    const originalText = button.innerHTML;
+                    button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                    setTimeout(() => {
+                        button.innerHTML = originalText;
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+            }
+        });
+    });
+    
+    // Share button functionality (simplified - would be replaced with actual sharing API)
+    const shareBtns = document.querySelectorAll('.share-btn');
+    
+    shareBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const platform = btn.classList.contains('twitter') ? 'Twitter' : 
+                             btn.classList.contains('facebook') ? 'Facebook' : 'LinkedIn';
+            alert(`This would share to ${platform} in a real implementation`);
+            // In a real implementation, we would use the respective social media sharing APIs
+        });
+    });
 });
